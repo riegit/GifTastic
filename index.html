@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GifTastic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Courgette|Great+Vibes|Lobster|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <style>
+    body{
+        background: url("assets/images/whiteGrid.jpg");
+    }
+    #gif-area{
+        background: url("assets/images/wallTexture.jpg");
+    }    
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Greatest Painter Search</h1>
+        <div class="row">
+            <div class="col-md-9">
+                <div id="paintertName-area"></div>
+            </div>
+            <div class="col-md-3">
+                <form id="painter-form">
+                <div class="form-group">
+                    <label for="painter-input" style:"font-family: 'Noto Serif', serif;">Add a painter:</label>
+                    <input type="text" class="form-control" id="painter-input" placeholder="Enter a painter name"  required="true">
+                </div>
+                <button id="add-painter" type="submit" class="btn btn-grey">Submit</button>
+             </div>
+        </div>
+        <br>
+        <div class="row" id="gif-background">
+            <div class="col-md-12" >
+                <div id="gif-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
