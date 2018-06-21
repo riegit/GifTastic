@@ -1,0 +1,61 @@
+
+body{
+
+}
+
+.container{
+margin-top: 20px;
+
+}
+
+button.painter{
+    float: left;
+    font-family: 'Noto Serif', serif;
+    border-radius: 10px;
+    border: solid 1px #1b1b1b;
+    text-align: center;
+    font-size: 12px;
+    background: #383838;
+    padding: 10px;
+    margin: 5px 5px;
+    font-weight: 700;
+    color: rgb(243, 241, 226)
+}
+label,
+#add-painter{
+    font-family: 'Noto Serif', serif;          
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+}
+#add-painter{
+    font-weight: 600;
+    color: azure;
+    background: #575455;
+}
+    
+
+painter-input{
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.paintClass{
+    display: inline-block;
+    margin: 10px;
+}
+p{
+    font-family:'Noto Serif', serif;
+    font-weight: bold;
+    background: #1b1b1b;
+    color:whitesmoke;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 5px;
+
+
+}
