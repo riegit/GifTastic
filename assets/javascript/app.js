@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     //Initial array of painters
 
-    var topics = ["Pablo Picasso", "Andy Warhol","Vincent Van Gogh","Paul Cezanne", "Claude Monet", "Michelangelo","Leonardo da Vinci","Sandro Botticelli","Georges Seurat","Mary Cassatt","Paul Gauguin"];
+    var topics = ["Pablo Picasso", "Andy Warhol","Vincent Van Gogh","Paul Cezanne", "Claude Monet", "Michelangelo","Leonardo da Vinci","Sandro Botticelli","Georges Seurat","Mary Cassatt","Paul Gauguin","Frida Kahlo"];
 
     //Function to GET the gif for each painter using Giphy API and JSON. 
 
@@ -101,10 +101,15 @@ $(document).ready(function() {
         event.preventDefault();
         var painter = $("#painter-input").val().trim();
 
-        //push user input to the original topics array and then execute renderButtons to display newly added button.
+        //When only if user inputs then push user input to the original topics array and then execute renderButtons to display newly added button.
+       if ((painter)!== ("")) {
+           console.log(painter);
         topics.push(painter);
-        $("#painter-input").val(" ");
+        $("#painter-input").val("");
+        
         renderButtons();
+       }
+        
     });
 
 
